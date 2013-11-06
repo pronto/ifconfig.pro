@@ -1,0 +1,33 @@
+<title> IP: {{ ip }} info</title>
+
+<pre>
+<a href=http://6.ifconfig.pro>force ipv6</a> <a href="http://[2605:2700:0:5::4713:95c5]/">6 no dns</a> | <a  href=http://4.ifconfig.pro>force ipv4</a>
+IP:             {{ ip }}
+HOSTNAME:       {{ hostname }}
+USER_AGNET:     {{ agent }}
+LANGUAGE:       {{ lang }}
+ENCODINGS:      {{ enco }}
+<hr>
+Feature list:
+
+$curl ifconfig.pro
+1.1.1.1
+
+$curl ifconfig.pro/ip.host
+1.1.1.1 r.d.ns.look.up
+
+$curl ifconfig.pro/host
+r.dns.look.up
+
+$curl ifconfig.pro/help
+this help file
+
+now ipv6 ready!
+to force ipv6 use 6.ifconfig.pro
+to force ipv4 use 4.ifconfig.pro
+
+
+<!-- end -->
+
+<hr>
+referral links: <a href="http://www.linode.com/?r=657ce52d44839e1e764b5e514f74daf2825a98c0">Linode - Xen VPS Hosting</a> | <a href=http://www.geekstorage.com/aff/319>GeekStorage - WebHosting For Geeks, By Geeks</a> | <a href="http://www.namecheap.com/?aff=22484">Namecheap.com domains</a>
