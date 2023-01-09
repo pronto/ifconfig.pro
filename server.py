@@ -29,8 +29,11 @@ def main():
                 enco=request.accept_encodings,
                 xip=request.access_route[0]
                 )
-    
-    
+
+@app.route('/ip')
+def ip():
+    return request.remote_addr + "\n"
+
 @app.route('/ip.host')
 def iphost():
     hostname=lookup(request.remote_addr)[0]
